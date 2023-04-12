@@ -11,7 +11,7 @@ function Auth() {
     avatar:"https://media.licdn.com/dms/image/C4D03AQGiltrd2YG7DA/profile-displayphoto-shrink_800_800/0/1664270891033?e=2147483647&v=beta&t=zZhsU5l7UqZSW_csj1W05VxDgKLSc9Akjz_X5lbXMj8"
   }
   return (
-    <Menu as="nav" className={"relative"}>
+    <Menu as="nav" className={"relative "}>
      {({open})=>(
       <>
          <Menu.Button className={`flex items-center h-8 rounded-3xl ${open ? "bg-active" : 'bg-black'} pr-2 hover:bg-active`}>
@@ -19,7 +19,7 @@ function Auth() {
               <span className={"font-sm font-semibold mr-2"}>{user.name}</span>
               <span className={open && "rotate-180"}><Icon size={16} name="downDir"/></span>
          </Menu.Button>
-       <Menu.Items className={"absolute top-full right-0 w-48 bg-active rounded translate-y-2 p-1"}>
+       <Menu.Items className={"absolute top-full right-0 w-48 bg-active rounded translate-y-2 p-1 z-[100]"}>
           <Menu.Item>
             {({ active }) => (
               <a

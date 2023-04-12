@@ -12,6 +12,9 @@ module.exports = {
         link:'#b3b3b3',
         footer:'#181818'
       },
+      zIndex: {
+        '100': '100',
+      },
       fontSize:{
         s:"0.813rem"
       },
